@@ -1,0 +1,19 @@
+<div class="container">
+
+	<h3>{{ post.title }}</h3>
+	<div ng-repeat='comment in post.comments'>
+		<div>{{ comment.title }}</div>
+		<div><span class="glyphicon glyphicon-plus-sign" ng-click="comVote(comment)"></span> Upvotes: {{ comment.upvotes }}</div>
+		<hr>
+		
+	</div>
+
+	<form ng-submit="addComment()" style="margin-top: 50px">
+		<h4> Submit Your Comment </h4>
+		<div class="form-group">
+		<input type="text" class="form-control" placeholder="Add Comments here" ng-model="comment"></input>
+		</div>
+		<button type="submit" class="btn btn-primary">Comment</button>
+	</form>
+
+</div>

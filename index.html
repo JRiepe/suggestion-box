@@ -8,7 +8,7 @@
 
     <!-- CSS -->
     <link href="css/main.css" rel="stylesheet" />
-    
+
     <!-- Angular and Angular Route -->
     <script src="js/vendor/angular.min.js"></script>
     <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
@@ -16,17 +16,28 @@
 
 <!-- App -->
 <body ng-app="SuggestionBox">
-
-    
-        <!-- View -->
-        <div ng-view></div>
-    
+    <div class="jumbotron">    
+        
+        <div class="header">
+          <h1 class="pull-left">Suggestion Box</h1><br>
+        </div>
+    </div>    
+    <div class="container-fluid"> 
+            <!-- View -->
+            <div ng-view></div>
+    </div>
+    <div class="container-fluid"> 
+        <footer>
+        
+        </footer>
+    </div>
      
     <!-- Modules -->
     <script type="text/javascript" src="js/app.js"></script>
      
     <!-- Controllers -->
     <script type="text/javascript" src="js/controllers/HomeController.js"></script>
+    <script type="text/javascript" src="js/controllers/SuggestionController.js"></script>
      
     <!-- Services -->
     <script type="text/javascript" src="js/services/suggestions.js"></script>
