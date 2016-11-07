@@ -8,7 +8,7 @@ posts: [
 		},
 		{
 		title: 'End all club emails with Laffy Taffy jokes',
-		upvotes: 9,
+		upvotes: 29,
 		comments: [],
 		},
 		{
